@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.VFX;
 
@@ -10,7 +11,8 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject disparo;
     [SerializeField] GameObject spawnPoint;
     [SerializeField]  float vidasplayer;
-    Animator animator;  
+    Animator animator;
+    [SerializeField] private TMP_Text textovidas;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -55,6 +57,7 @@ public class Player : MonoBehaviour
     {
         vidasplayer -= danhoRecibidoplayer;
         animator.SetTrigger("New Trigger");
+        textovidas.SetText(""+vidasplayer);
         if (vidasplayer <= 0)
         {
             Destroy(gameObject);
