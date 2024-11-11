@@ -8,12 +8,15 @@ public class Enemigo : MonoBehaviour
     [SerializeField] float velocidad;
     [SerializeField] float vidas;
     Animator animator;
+    [SerializeField] GameObject DisparoenemigoPrefab;
+    [SerializeField] GameObject Spawnerdebala;
     void Start()
     {
         animator = GetComponent<Animator>();
+        StartCoroutine(Disparosenemigo());
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         Movimiento();
@@ -34,6 +37,15 @@ public class Enemigo : MonoBehaviour
         
         }
         
+    
+    }
+    private IEnumerator Disparosenemigo() 
+    { 
+        while (true) 
+        { 
+            Instantiate(DisparoenemigoPrefab, Spawnerdebala.transform.position,Quaternion.identity);
+            yield return new WaitForSeconds(1);
+        }
     
     }
 }

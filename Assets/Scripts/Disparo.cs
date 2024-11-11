@@ -29,7 +29,11 @@ public class Disparo : MonoBehaviour
             Destroy(gameObject);
             collision.gameObject.GetComponent<Enemigo>().RecibirDanho(danhoDisparo);
 
-
+        }
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+            collision.gameObject.GetComponent<Player>().RecibirDanhoPlayer(danhoDisparo);
 
         }
     }

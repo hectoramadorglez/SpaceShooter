@@ -47,7 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c616894a929f044cbc5e5fcd1f93a96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 0
+  velocidad: 4
+  danhoDisparo: 2
 --- !u!61 &5343271995289077415
 BoxCollider2D:
   m_ObjectHideFlags: 0

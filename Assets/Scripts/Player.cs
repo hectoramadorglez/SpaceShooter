@@ -9,9 +9,11 @@ public class Player : MonoBehaviour
     [SerializeField] int velocidad;
     [SerializeField] GameObject disparo;
     [SerializeField] GameObject spawnPoint;
+    [SerializeField]  float vidasplayer;
+    Animator animator;  
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -48,5 +50,16 @@ public class Player : MonoBehaviour
         }
     
     
+    }
+    public void RecibirDanhoPlayer(float danhoRecibidoplayer) 
+    {
+        vidasplayer -= danhoRecibidoplayer;
+        animator.SetTrigger("New Trigger");
+        if (vidasplayer <= 0)
+        {
+            Destroy(gameObject);
+
+        }
+
     }
 }

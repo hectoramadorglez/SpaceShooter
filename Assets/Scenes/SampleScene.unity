@@ -1631,6 +1631,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2019911362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2019911363}
+  m_Layer: 0
+  m_Name: SpawnerdeBala
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2019911363
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019911362}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.793, y: -1.2348692, z: 0.0917292}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2065166573
 GameObject:
   m_ObjectHideFlags: 0
@@ -1791,6 +1822,10 @@ PrefabInstance:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 7881479956457384551}
+    - target: {fileID: 2294537925431775161, guid: c9fd40983f043344d8e9d8714a7b3c05, type: 3}
+      propertyPath: vidasplayer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6848123987829686893, guid: c9fd40983f043344d8e9d8714a7b3c05, type: 3}
       propertyPath: m_SortingOrder
       value: 9
@@ -1820,3 +1855,4 @@ SceneRoots:
   - {fileID: 1671790714}
   - {fileID: 245913603}
   - {fileID: 1514990896}
+  - {fileID: 2019911363}
